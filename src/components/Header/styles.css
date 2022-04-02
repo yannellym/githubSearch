@@ -1,0 +1,15 @@
+.header-container{
+    background: #f5c803;
+    font-size: 10px;
+    height: 6rem;
+    
+}
+.header-container > h1 {
+    text-align: center;
+    letter-spacing: .3rem;
+    padding-top: 1.9%;
+    font-family: 'Bebas Neue', cursive;
+}
+.book{
+    margin-right: 1%;
+}

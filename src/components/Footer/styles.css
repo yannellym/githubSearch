@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.footer-container{
+    background: #f7cb09;
+    font-size: 10px;
+    height: 5.6rem;
+    
+}
+.footer-container > h1 {
+    text-align: center;
+    padding-top: 3%;
+    letter-spacing: .3rem;
+    font-family: 'Bebas Neue', cursive;
+}

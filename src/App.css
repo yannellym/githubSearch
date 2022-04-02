@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Search Area */
+
+.search-area{
+    background-color: #000000;
+    border-bottom: 3px solid #f7cb09;
+}
+.search-area > section{
+    display: flex;
+    width: 100%;
+}
+.search-area > section >h1{
+    color: rgb(8, 212, 25);
+    margin: 0 auto;
+    width: 36%;
+    padding-top: 2%;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    display: flex;
+    padding-left: 8%;
+}
+@keyframes glow {
+    from {
+      text-shadow:   0 0 10px #f7cb09;;
+    }
+    to {
+      text-shadow:  0 0 30px #f7cb09;;
+    }
+  }
+
+  @font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+  }
+  
+
+/* Github stars */
+.github-stars{
+    background-color: #000000;
+    height: 39rem;
+    width: 100%;
+}
+.github-stars > h4 {
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    padding-top: 4%;
+    color: #f7cb09;
+    font-family: 'Bebas Neue', cursive;
+}
+.single-stars{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 3% auto;
+}
+.star{
+    height: 2rem;
+    padding: 1%;
+}
+
+/* User results */
+.user-results{
+    background-color: black;
+}
+.user-results >h3{
+    color: white;
+    padding: 3%;
+}
+.all-cards{
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    background-color: #5052015d;
+    padding: 50px;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 270px);
+}
