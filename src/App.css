@@ -89,3 +89,14 @@
     row-gap: 20px;
     grid-template-columns: repeat(auto-fill, 270px);
 }
+.no-user{
+    width: 80%;
+    color: rgb(253, 1, 1);
+    margin: 0 auto;
+    text-align: center;
+}
+.no-user >img{
+   width: 100%;
+   padding-top: 4%;
+   height: 500px;
+}

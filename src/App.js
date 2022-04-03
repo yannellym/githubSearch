@@ -38,7 +38,7 @@ function App() {
         url: "https://api.github.com/graphql",
         method: 'post',
         headers: {
-          Authorization: `bearer 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`
+          Authorization: `bearer ${process.env.REACT_APP_API_KEY}`
           },
             data: {
               query: `query($searchQuery:String!){
@@ -89,7 +89,6 @@ function App() {
           setError(true)   //if there's an error, it'll display an h1 below
         }
       }
-
   //will determine the page number and slice elements for 5 per page depending on first and last index
   const startIndex = (page - 1) * 6
   const selectedUsers = allUsers.slice(startIndex, startIndex + 6)
@@ -97,14 +96,14 @@ function App() {
   return (
     <div>
       <div className="search-area">
-      <Header />
-        {error && <h1>Oops, something went wrong!</h1>}
-        <section>
-          <h1>Search your favorite Github user</h1>
-        </section>
-        <SearchBar getUserData={getUserData}  />
-      
-      {gettingUsers&&             // loading bar
+        <Header />
+          {error && <h1>Oops, something went wrong!</h1>}
+          <section>
+            <h1>Search your favorite Github user</h1>
+          </section>
+          <SearchBar getUserData={getUserData}  />
+    
+        {gettingUsers&&             // loading bar
         <Box sx={{ display: 'flex',  mx: "auto", width: 200}}>      
             <CircularProgress />
         </Box>
@@ -113,15 +112,23 @@ function App() {
     {!showStars?     //if we're not showing the github stars, display number of users and the cards
       (<div className="user-results">
           {displayNumber&& <h3>Number of users: {allUsers.length}</h3>}
-        <div className="all-cards">
-          {selectedUsers?.map(user =>     //maps through the allUsers array and returns each user's info on a card component
-            <Cards
-            user={user} 
-            key={user.id} 
-            page={page}/>
-            )
-          }    
-        </div>
+
+          {allUsers.length === 0?   // if there are no users, display the no user div
+            <div className="no-user">
+              <h1>Oops! no users under that username :( </h1>
+              <img src="./images/nouser.jpg" alt="no user"/>
+            </div>
+            :         // else, if we have users, display the cards
+          <div className="all-cards">
+            {selectedUsers?.map(user =>     //maps through the allUsers array and returns each user's info on a card component
+              <Cards
+                user={user} 
+                key={user.id} 
+                page={page}/>
+              )
+            }    
+          </div>
+          }
         {                           //materialUi pagination component 
             <Stack spacing={5} 
               sx={{ minWidth: 100, backgroundColor: "white", mx: "auto", 
@@ -144,9 +151,9 @@ function App() {
       (
         <div className="github-stars">
           <h4>
-          <img src="./star.png" className="star" alt="star" />
-            Featured Github Stars 
-            <img src="./star.png" className="star" alt="star" />
+            <img src="./images/star.png" className="star" alt="star" />
+              Featured Github Stars 
+            <img src="./images/star.png" className="star" alt="star" />
           </h4>
           <section className="single-stars">
             <StarOne />

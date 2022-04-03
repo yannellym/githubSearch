@@ -31,7 +31,7 @@ const Cards = ({ user }) => {
                   <strong className="counts">Following:</strong>{user.following.totalCount}
               </Typography>
               <Typography gutterBottom color="text.primary">
-                  <strong className="counts">Pull Requests:</strong>{user.pullRequests.totalCount}
+                  <strong className="counts">P.Rs:</strong>{user.pullRequests.totalCount}
                   <strong className="counts">Repositories:</strong>{user.repositories.totalCount}
               </Typography>
             <CardActions>

@@ -13,3 +13,9 @@
 .book{
     margin-right: 1%;
 }
+.book:hover {
+   border-bottom: red solid 2px;
+}
+.header-container > h1:hover{
+    color:red;
+}
