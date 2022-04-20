@@ -1,17 +1,13 @@
 
 
-# JavaScript Exercise: GitHub User Search
-
-* Please see below for an extensive description of the project's instructions.</br>
-* URL to hosted project: https://adorable-vacherin-c76ead.netlify.app/ </br>
-
-## PREVIEW: 
-
+# GitHub User Search
 https://user-images.githubusercontent.com/91508647/161445857-59fa6dc0-c01b-4a2b-822d-b6b112c8fad5.mov
+* Live project: https://adorable-vacherin-c76ead.netlify.app/ </br>
 
+## Overview
+### Description
 
-
-The goal of this project was to create a Github user search that would show a paginated result of users, along with the count of users searched. Below i the approach I used:
+Github Search is a tool that allows users to search through Github and find its users. Users can see a paginated result of users, along with the count of users searched.
 
 ## Plan
 ● My first thought was to develop a plan. I asked myself the following questions; How will I accomplish this? what tools do I need? which API do I need? What is the end goal? what requirements do I need to meet? which technologies do I need to use? </br>
@@ -74,62 +70,12 @@ significant to your overall implementation. </br>
 add to your project?</br>
   -If given more time, I would like to improve on the design of the project. I believe it accomplishes the theme I had in mind, however, it does not meet all accessibility requirements. Also, it could be improved in the responsiveness aspect. Something I would add to my project is a category of recently searched users. This catergory would include Github users that the current app is user has searched. Additionally, I would add an error page and a skeleton. </br>
 
-
-
-
-
-## Instructions 
-The goal of this exercise is to create an app that re-implements a portion of GitHub's Search
-feature, the user search, using their public API. Please share a working deployed version of the
-exercise as well as the github repo.
-The purpose of this code exercise is for us to see a little taste of who you are as a developer.
-Don't worry about 'over-engineering' your solution, and don't be afraid to add additional features
-(or playful flourishes!), as long as what you build is something you're proud of.
-We know that there will be things that you wished you could add if you had more time, that's
-part of the goal! We learn as much about you from what you choose not to include as we do
-from what you include!
-Feel free to use third party libraries or other code that you did not write to help you implement
-your exercise. However, please make sure that it is obvious which code you wrote and which
-code you borrowed from somewhere else. Also, be sure there's enough of your own work to
-give us an accurate impression of who you are.
-
-## Setup
-● Please use a modern JavaScript framework or library (Angular, React, Vue, SVELTE,
-LitElement, etc.)</br>
-● Use the latest version of the framework or library.</br>
-● You may use any build system you wish, including any cli.</br>
-● You may use any additional third-party libraries you see fit.</br>
-
-## Rules
-● The app should NOT require users of the application to provide GitHub permissions. </br>
-● You should not fork or use an existing repo although starter kits and boilerplate apps are
-allowed - consider using npx create scripts instead</br>
-● If the project is copied, forked, or forged in any way, it is considered an automatic fail
-from our review team.</br>
-● In your projects README, please include details about the following:</br>
-● Highlight something in your project that you thought was especially interesting or
-significant to your overall implementation.</br>
-● Tell us about what you are most pleased or proud of with your implementation.</br>
-● Given more time, what would the next feature or improvement you would like to</br>
-add to your project?
-
-## Minimum Requirements
-Use https://github.com/search as a reference for functionality, but feel free to change style,
-behavior, and features as you see fit and time permitting. It is not necessary to match the actual
-design of GitHub and we are not expecting a professional design. Focus on functionality and
-code.
-
-### As a user,
-● I can search for users and see a paginated list of results</br>
-● I can navigate through the next and previous pages of the paginated results</br>
-● I see the total count of search results</br>
-● I see notable information for each search result, such as the description, star/follower
+### Users can: 
+● Search for users and see a paginated list of results</br>
+● Navigate through the next and previous pages of the paginated results</br>
+● See the total count of search results</br>
+● See notable information for each search result, such as the description, star/follower
 count, profile pictures, etc.</br>
-● I can select a search result and be taken to the applicable page on github.com API</br>
-● The app should utilize GitHub's public API; either the v3 REST API or the v4 GraphQL version.</br>
+● Select a search result and be taken to the applicable page on github.com API</br>
 
-Examples of the API call you'll likely need to make:</br>
-Search
-Documentation: https://developer.github.com/v3/search/  </br>
-GET https://api.github.com/search/users?q=example
 
